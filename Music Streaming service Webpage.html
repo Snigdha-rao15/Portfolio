@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #fff;
+        }
+        header {
+            background: #1DB954;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .music-card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .music-card:hover {
+            background: #333;
+        }
+        .music-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .music-card h2 {
+            font-size: 1.2em;
+        }
+        .music-card p {
+            font-size: 0.9em;
+            color: #bbb;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .playlist {
+            margin: 20px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+        .playlist h2 {
+            margin-top: 0;
+        }
+        .playlist ul {
+            list-style: none;
+            padding: 0;
+        }
+        .playlist ul li {
+            padding: 10px;
+            background: #333;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Music Streaming Service</h1>
+    </header>
+    <div class="container">
+        <div class="music-card">
+            <img src="https://via.placeholder.com/300" alt="Album Cover">
+            <h2>Song Title 1</h2>
+            <p>Artist 1</p>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="music-card">
+            <img src="https://via.placeholder.com/300" alt="Album Cover">
+            <h2>Song Title 2</h2>
+            <p>Artist 2</p>
+            <audio controls>
+                <source src="song2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="music-card">
+            <img src="https://via.placeholder.com/300" alt="Album Cover">
+            <h2>Song Title 3</h2>
+            <p>Artist 3</p>
+            <audio controls>
+                <source src="song3.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <div class="playlist">
+        <h2>My Playlist</h2>
+        <ul>
+            <li>Song Title 1 - Artist 1</li>
+            <li>Song Title 2 - Artist 2</li>
+            <li>Song Title 3 - Artist 3</li>
+        </ul>
+    </div>
+</body>
+</html>
